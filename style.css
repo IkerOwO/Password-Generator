@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+   background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.container h2{
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 15px #48abe0;
+    background-color: #48abe0;
+    width: 500px;
+    height: 550px;
+    margin-left: 700px;
+}
+
+/* Boton Submit */
+.generate-btn  {
+    background-color: #484848;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 60px;
+    transition: all 400ms ease;
+   }
+   
+  .generate-btn:active {
+    color: #777;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .generate-btn:hover:not(:disabled) {
+    background: #005CC8;
+    color: #fff;
+   }
+   
+  .generate-btn:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+/* Boton Dark */
+   :root{
+    --bs-dark: #212529;
+  }
+  
+  .theme-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .theme-container img{
+    width: 20px;
+    height: auto;
+  }
+  
+  .theme-container:hover {
+    opacity: 0.8;
+  }
+  
+  .shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    box-shadow: 17px 17px 23px #1a1d20,
+      -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+      inset -5px -5px 4px #24282c;
+  }
+  
+  .shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+      inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+      inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+  }
+  
+  @keyframes change {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  
+  .change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+  }
+
+  .input-box input{
+    height: 20px;
+  }
+
+  .input-box{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .pass-length{
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+.pass-settings{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.pass-settings .title{
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.input-box span{
+    cursor: pointer;
+    font-size: medium;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    border-radius: 0px;
+    margin-left: 20px;
+}
+
+.input-box span img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Boton Github */
+
+.git button svg{
+  height: 40px;
+}
+
+.git button{
+  margin-left: 5%;
+  margin-top: 40px;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  background-color: #000000;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.git button:hover{
+  background-color: #1a1a1a;
+  transform: translateY(-3px);
+}
+
+
+@media (min-width: 375px) and (max-width: 767px){
+  .container h2{
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 15px #48abe0;
+    background-color: #48abe0;
+    width: 300px;
+    height: 450px;
+    margin-left: 35px;
+}
+
+/* Boton Submit */
+.generate-btn  {
+    background-color: #484848;
+    border: none;
+    padding: 1rem;
+    font-size: 10px;
+    width: 10em;
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 90px;
+    transition: all 400ms ease;
+   }
+   
+  .generate-btn:active {
+    color: #777;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .generate-btn:hover:not(:disabled) {
+    background: #005CC8;
+    color: #fff;
+   }
+   
+  .generate-btn:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+/* Boton Dark */
+   :root{
+    --bs-dark: #212529;
+  }
+  
+  .theme-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .theme-container img{
+    width: 20px;
+    height: auto;
+  }
+  
+  .theme-container:hover {
+    opacity: 0.8;
+  }
+  
+  .shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    box-shadow: 17px 17px 23px #1a1d20,
+      -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+      inset -5px -5px 4px #24282c;
+  }
+  
+  .shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+      inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+      inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+  }
+  
+  @keyframes change {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  
+  .change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+  }
+
+  .input-box input{
+    height: 20px;
+  }
+
+  .input-box{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .pass-length{
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+.pass-settings{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.pass-settings .title{
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.input-box span{
+    cursor: pointer;
+    font-size: medium;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    border-radius: 0px;
+    margin-left: 20px;
+}
+
+.input-box span img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Boton Github */
+
+.git button svg{
+  height: 40px;
+}
+
+.git button{
+  margin-left: 5%;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  background-color: #000000;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.git button:hover{
+  background-color: #1a1a1a;
+  transform: translateY(-3px);
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+  .container h2{
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 15px #48abe0;
+    background-color: #48abe0;
+    width: 300px;
+    height: 450px;
+    margin-left: 220px;
+}
+
+/* Boton Submit */
+.generate-btn  {
+    background-color: #484848;
+    border: none;
+    padding: 1rem;
+    font-size: 10px;
+    width: 10em;
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 90px;
+    transition: all 400ms ease;
+   }
+   
+  .generate-btn:active {
+    color: #777;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .generate-btn:hover:not(:disabled) {
+    background: #005CC8;
+    color: #fff;
+   }
+   
+  .generate-btn:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+/* Boton Dark */
+   :root{
+    --bs-dark: #212529;
+  }
+  
+  .theme-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .theme-container img{
+    width: 20px;
+    height: auto;
+  }
+  
+  .theme-container:hover {
+    opacity: 0.8;
+  }
+  
+  .shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    box-shadow: 17px 17px 23px #1a1d20,
+      -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+      inset -5px -5px 4px #24282c;
+  }
+  
+  .shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+      inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+      inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+  }
+  
+  @keyframes change {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  
+  .change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+  }
+
+  .input-box input{
+    height: 20px;
+  }
+
+  .input-box{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .pass-length{
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+.pass-settings{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.pass-settings .title{
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.input-box span{
+    cursor: pointer;
+    font-size: medium;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    border-radius: 0px;
+    margin-left: 20px;
+}
+
+.input-box span img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Boton Github */
+
+.git button svg{
+  height: 40px;
+}
+
+.git button{
+  margin-left: 5%;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  background-color: #000000;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.git button:hover{
+  background-color: #1a1a1a;
+  transform: translateY(-3px);
+}
+}
