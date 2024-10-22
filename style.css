@@ -47,7 +47,7 @@ a{
     box-shadow: 0 0.4rem #dfd9d9;
     cursor: pointer;
     margin-top: 15px;
-    margin-left: 60px;
+    margin-left: 100px;
     transition: all 400ms ease;
    }
    
@@ -124,7 +124,8 @@ a{
   }
 
   .input-box input{
-    height: 20px;
+    height: 30px;
+    width: 90%;
   }
 
   .input-box{
@@ -138,14 +139,14 @@ a{
     font-size: medium;
     font-weight: 500;
     text-decoration: underline;
-    margin-left: 70px;
+    margin-left: 110px;
     margin-top: 15px;
     margin-bottom: 10px;
   }
 
 .pass-settings{
     list-style: none;
-    margin-left: 30px;
+    margin-left: 70px;
 }
 
 .pass-settings .title{
@@ -170,6 +171,8 @@ a{
 .input-box span img{
     width: 30px;
     height: 30px;
+    margin-top: 10px;
+    margin-left: 90px;
 }
 
 /* Boton Github */
