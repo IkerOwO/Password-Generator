@@ -376,7 +376,7 @@ a{
 
 }
 
-@media (min-width: 768px) and (max-width: 990px){
+@media (min-width: 370px) and (max-width: 760px){
   .container h2{
     text-decoration: underline;
     font-size: xx-large;
@@ -393,8 +393,8 @@ a{
     box-shadow: 0 0 50px 15px #48abe0;
     background-color: #48abe0;
     width: 300px;
-    height: 450px;
-    margin-left: 220px;
+    height: 490px;
+    margin-left: 40px;
 }
 
 /* Boton Submit */
@@ -493,7 +493,7 @@ a{
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .pass-length{
